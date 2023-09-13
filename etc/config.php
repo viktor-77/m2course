@@ -212,22 +212,5 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1
-    ],
-    'system' => [
-        'default' => [
-            'general' => [
-                'locale' => [
-                    'timezone' => 'Australia/Sydney',
-                    'code' => 'en_AU'
-                ],
-            ],
-            'currency' => [
-                'options' => [
-                    'base' => 'AUD',
-                    'default' => 'AUD',
-                    'allow' => 'AUD'
-                ],
-            ],
-        ],
-    ],
+    ]
 ];
