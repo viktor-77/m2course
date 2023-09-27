@@ -108,12 +108,9 @@ class ProductSizeAttribute implements DataPatchInterface, PatchRevertableInterfa
     {
         $collection = $this->cmsBlockCollectionFactory->create();
         $collection->addFieldToFilter('is_active', 1);
+        $collection->addFieldToSelect('identifier');
 
-        $result = [];
-        foreach ($collection as $block) {
-            $result[] = $block->getIdentifier();
-        }
-
-        return $result;
+        return $collection->getColumnValues('identifier');
     }
+
 }
